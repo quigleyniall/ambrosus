@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.product-container {
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #eee;
+  margin: 10px;
+  transition: .2s all ease;
+}
+
+.product-container:hover {
+ transform: translateY(2px);
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.product-price {
+  margin: 10px 0;
+}
+
+
+.moreInfo-item {
+  width: 50%;
+}
+
+.productInfo {
+  width: 75%;
+  display: inline-block;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.sidebar-container {
+  width: 25%;
+  background: #eee;
+}
+
+
+.sidebar {
+  width: 140px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.sidebar-link {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.sidebar-link:hover {
+  background: #fff;
+}
+
+.Navbar {
+  height: 150px;
+  width: 100%;
+}
+
+.navbar-image {
+  width: 25%;
+  height: 150px;
+}
+
+.generalInfo-container {
+  display: flex;
+  align-items: center;
+}
+
+.generalInfo-image {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.generalInfo {
+  display: inline-block;
+  padding: 15px;
+  width: 60%;
+}
+
+.generalInfo-name {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.generalInfo-desc {
+  margin-bottom: 10px;
+}
+
+.generalInfo-size {
+
+}
+
+.location-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.location-key {
+  align-self: flex-start;
+  width: 50%;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+
+.location-value {
+  align-self: flex-end;
+  width: 50%;
+  padding: 20px 0;
+}
+
+.full {
+  width: 100% !important;
+}
+
+.back {
+  background: #eee;
+}
+
+.qr-image {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 900px) {
+  .qr-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar-container {
+    display: none;
+  }
+  .content-wrapper {
+  flex-direction: column;
+  }
+  .navbar-image {
+    width: 40%;
+  }
+  .generalInfo-container {
+    flex-direction: column;
+  }
+  .productInfo {
+    width: 100%;
+  }
+}
