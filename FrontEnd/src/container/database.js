@@ -3,6 +3,7 @@ import axios from 'axios'
 import '../App.css'
 import {Link} from 'react-router-dom'
 
+// gets all files from mongoDB database
 class Database extends Component {
   constructor() {
     super()

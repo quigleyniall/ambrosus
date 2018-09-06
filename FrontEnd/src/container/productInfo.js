@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import '../App.css'
 import AmbrosusSDK from 'ambrosus-javascript-sdk';
 import GeneralInfo from '../components/generalInfo'
-import AssetLocation from '../components/AssetLocation'
 import EventLocation from '../components/EventLocation'
 import Sidebar from './sidebar'
 import Navbar from '../components/Navbar'
@@ -74,8 +73,7 @@ renderInfo = (str ,name) => {
         </div>
         <div className="productInfo">
           <GeneralInfo info={this.state.info} assetId={assetId}/>
-          <AssetLocation assetLocation={this.state.assetLocation}/>
-          <EventLocation eventLocation={this.state.eventLocation}/>
+          <EventLocation eventLocation={this.state.eventLocation} assetLocation={this.state.assetLocation}/>
         </div>
         </div>
       </div>

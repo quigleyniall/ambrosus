@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 
 // add an event to the private database
-//  Not using this
+//  Not rednering this
 
 class CreateProduct extends Component {
   constructor() {

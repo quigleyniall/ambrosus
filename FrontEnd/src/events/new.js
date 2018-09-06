@@ -1,3 +1,5 @@
+// example event posts
+
 const event66Response = await fetch(`https://gateway-test.ambrosus.com/assets/0x984281546f75597634fe664466203258f9a1623e528adbc03e859dec9ad7d702/events`, {
   method: 'POST',
   headers: {
